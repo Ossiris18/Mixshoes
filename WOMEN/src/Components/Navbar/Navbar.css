@@ -1,0 +1,96 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinear todos los elementos horizontalmente */
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black; 
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    height: 40px; /* Ajusta este valor según el tamaño deseado del logo */
+}
+
+.nav-logo p {
+    color: #171717;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+    color: #000000; /* Color negro por defecto */
+}
+
+.nav-menu li.selected {
+    color: #ff0000; /* Color rojo cuando está seleccionado */
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del li */
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #14353e;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Reducido el espacio entre los elementos */
+}
+
+.nav-login-cart button {
+    width: 130px; /* Ajustado para acomodar mejor */
+    height: 40px; /* Ajustado para acomodar mejor */
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 16px; /* Ajustado para acomodar mejor */
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active {
+    background: #f3f3f3;
+}
+
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: -40px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}

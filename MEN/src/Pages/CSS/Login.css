@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente general de la aplicación */
+    background-color: #f4f4f4; /* Color de fondo suave */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+}
+
+h1 {
+    text-align: center; /* Centrar el título */
+    color: #333; /* Color del texto */
+}
+
+section {
+    background: white; /* Fondo blanco para las secciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px auto; /* Margen superior e inferior, centrado */
+    padding: 20px; /* Espaciado interno */
+    max-width: 400px; /* Ancho máximo del formulario */
+}
+
+h3 {
+    color: #555; /* Color del subtítulo */
+}
+
+label {
+    display: block; /* Mostrar las etiquetas en bloques */
+    margin-bottom: 5px; /* Margen inferior para separación */
+    font-weight: bold; /* Texto en negrita */
+}
+
+input {
+    width: 100%; /* Ancho completo del input */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+button {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    width: 100%; /* Ancho completo del botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+p {
+    margin-top: 10px; /* Margen superior para separación */
+    color: #333; /* Color del texto de respuesta */
+    font-weight: bold; /* Texto en negrita */
+}

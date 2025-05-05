@@ -1,0 +1,56 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center; /* Centrar el título */
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 1px; /* Reducir el espacio entre los elementos */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Reducir el espacio vertical entre los elementos dentro del item */
+    margin: 0 1px; /* Reducir el espacio a ambos lados de cada item */
+    text-align: center; /* Centrar el texto dentro del item */
+}
+
+.item img {
+    width: 90px; /* Tamaño más pequeño */
+    height: 90px; /* Asegúrate de que las imágenes sean cuadradas */
+    object-fit: cover;
+    margin: 0; /* Eliminar espacio extra entre las imágenes */
+}
+
+.item h2,
+.item p {
+    margin: 0;
+    text-align: center; /* Centrar el texto */
+}
+
+.item .product-info {
+    display: flex;
+    align-items: center; /* Alinea los precios con el nombre del producto */
+    gap: 10px;
+}
