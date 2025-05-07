@@ -3,7 +3,7 @@ import router from './routes/index.js';
 import cors from 'cors';
 
 const app = express();
-const PORT = process.env.PORT || 4003;
+const PORT = process.env.PORT || 4001;
 
 app.use(cors()); 
 app.use(express.json());
@@ -12,6 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/", router);
 
 app.listen(PORT, () => {
-    console.log(`Cart service is running on http://localhost:${PORT}`);
+    console.log(`CartMen service is running on http://localhost:${PORT}`);
     }           
 );
