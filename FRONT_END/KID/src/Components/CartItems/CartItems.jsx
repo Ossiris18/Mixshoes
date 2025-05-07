@@ -1,9 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import './CartItems.css';
 import { ShopContext } from "../../Context/ShopContext";
 import remove_icon from '../Assets/cart_cross_icon.png';
 import ReactDOM from "react-dom"
-import { use } from "react";
 
 
 const PayPalButton = window.paypal.Buttons.driver("react", {React, ReactDOM});
@@ -40,21 +39,16 @@ const CartItems = () => {
         const produtosNecesarios = productosSelecionados.map((x)=>{
             return {id: x.id, category: x.category, name: x.name, new_price: x.new_price}
         })
-       
+
         const res = await fetch("http://localhost:5000/cart",{
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(produtosNecesarios)
-        })
-
-        const data = await res.json()
-        
+        })   
         if (res.ok)
             alert("Datos insertados correctamente")
-
-        
     }
 
     return (

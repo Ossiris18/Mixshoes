@@ -1,6 +1,5 @@
 import { Router } from "express";
-import {getDataCart,postDataCart, putDataCart, deleteDataCart} from "../controllers/cart.controller.js"
-
+import { getDataCart,postDataCart, putDataCart, deleteDataCart } from "../controllers/cart.controller.js"
 
 const router = Router();
 
