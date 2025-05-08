@@ -48,6 +48,26 @@ const CartItems = () => {
             // Aquí puedes agregar lógica adicional, como limpiar el carrito
         });
     };
+    const handleSubmit = async(e)=>{
+        e.preventDefault();
+        const productosSelecionados = all_product.filter((x)=>{ return cartItems[x.id] > 0 })
+        console.log(productosSelecionados)
+        const produtosNecesarios = productosSelecionados.map((x)=>{
+            return {id: x.id, category: x.category, name: x.name, new_price: x.new_price}
+        })
+       
+        const res = await fetch("http://localhost:5000/women",{
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(produtosNecesarios)
+        })   
+        if (res.ok)
+            alert("Datos insertados correctamente")
+
+        
+    }
 
     return (
         <div className="cartitems">
@@ -114,6 +134,10 @@ const CartItems = () => {
                     </div>
                 </div>
             </div>
+            <form onSubmit={handleSubmit} className="cartitems-form">
+                <button type="submit" class="boton-sencillo">Pago con un Clic</button>
+            </form>
+            <br></br>
             {/*button para pagar de paypal*/}
             <PayPalButton 
                 createOrder={createOrder}

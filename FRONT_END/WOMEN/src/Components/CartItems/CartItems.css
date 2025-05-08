@@ -107,3 +107,7 @@
     color: white;
     cursor: pointer;
 }
+.boton-sencillo {
+    width: 750px;    /* Ancho fijo */
+    height: 45px;    /* Alto fijo */
+  }
